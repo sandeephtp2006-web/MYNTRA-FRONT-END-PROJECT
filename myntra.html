@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYNTRA</title>
+    <style>
+        nav{
+            background-color: white;
+            color: black;
+            box-shadow: 1px 1px 1px 1px #ccc;
+        }
+        nav ul{
+            display: flex;
+            padding: 0%;
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li a:hover{
+            color: lightgrey;
+        }
+        nav{
+            padding: 45px;
+            background-color: white;
+        }
+        nav ul li{
+            margin-right: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        
+        body{
+            margin: 0;
+            border-radius: 10%;
+             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        nav ul {
+             padding: 15;
+             display: flex;
+             margin: 0%;
+             list-style: none;
+           margin-left: 30px;
+           align-items: center; justify-content: space-around;
+          margin-right: 1000px;
+          margin-left: 150px;
+        }
+        nav ul li{
+            font-size: large;
+            font-weight: 800;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    ;
+           font-size: xx-large;
+            align-self: stretch;
+           
+            
+
+            
+        }
+        .sea{
+            height: 50px;
+            width: 350px;
+            position: absolute;
+            top: 20px;
+            right: 500px;
+            background-color: #ccc;
+            color: black;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+       
+        .myn{
+            position: absolute;
+            top: 35px;
+            left: 42px;
+
+
+        }
+        .sear{
+            position: absolute;
+            top: 40px;
+            height: 50px;
+            right: 850px;
+
+        }
+        .pro{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 300px;
+
+
+        }
+        .p1{
+            position: absolute;
+            font-weight: bolder;
+            font-size: 20px;
+            top: 50px;
+            right: 250px;
+        }
+        .p2{
+            position: absolute;
+            font-weight: bolder;
+            font-size: 20px;
+            top: 50px;
+            right: 140px;
+
+        }
+        .p3{
+            position: absolute;
+            font-weight: bolder;
+            font-size: 20px;
+            top: 50px;
+            right: 70px;
+
+        }
+        .img1{
+            position: absolute;
+            top: 200px;
+            width: 90%;
+            left: 100px;
+            
+        }
+        .img2{position: absolute;
+            top: 650px;
+            left: 0px;
+
+        }
+        .ri{
+            position: absolute;
+            top: 1200px;
+            left: 70px;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #0E0F17;
+        }
+        .img4{
+            position: absolute;
+            top: 1400px;
+            left: 0px;
+            width: 100%;
+
+        }
+        .lux{
+             position: absolute;
+            top: 2000px;
+            left: 70px;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #0E0F17;
+
+        }
+        .img5{
+            position: absolute;
+            top: 2200px;
+            left: 0%;
+            width: 100%;
+        }
+        .med{
+                         position: absolute;
+            top: 2700px;
+            left: 70px;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #0E0F17;
+
+        }
+        .img6{
+             position: absolute;
+            top: 2900px;
+            left: 0%;
+            width: 100%;
+
+        }
+        .gra{
+            
+                         position: absolute;
+            top: 3400px;
+            left: 70px;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #0E0F17;
+        }
+        .img7{
+                         position: absolute;
+            top: 3600px;
+            left: 0%;
+            width: 100%;
+
+        }
+        .sho{
+             position: absolute;
+            top: 255rem;
+            left: 70px;
+            font-weight: bolder;
+            font-size: 50px;
+            color: #0E0F17;
+
+        }
+        .img11{                         position: absolute;
+            top: 265rem;
+            left: 0%;
+            width: 100%;
+
+        }
+        .a1{position: absolute;
+            top: 280rem;
+            left: 70px;
+            height: 110px;
+            width: 290px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .a2{
+            position: absolute;
+            top: 280rem;
+            left: 25.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .a3{
+            position: absolute;
+            top: 280rem;
+            left: 46rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .a4{
+            position: absolute;
+            top: 280rem;
+            left: 67rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .a5{
+            position: absolute;
+            top: 280rem;
+            right: 20.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .a6{
+            position: absolute;
+            top: 280rem;
+            right: 0rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .imgb1{
+                                 position: absolute;
+            top: 295rem;
+            left: 0%;
+            width: 100%;
+
+        }
+        .b1{position: absolute;
+            top: 309rem;
+            left: 70px;
+            height: 110px;
+            width: 290px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .b2{
+            position: absolute;
+            top:  309rem;
+            left: 25.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .b3{
+            position: absolute;
+            top:  309rem;
+            left: 46rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .b4{
+            position: absolute;
+            top:  309rem;
+            left: 66.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .b5{
+            position: absolute;
+            top:  309rem;
+            right: 20.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .b6{
+            position: absolute;
+            top:  309rem;
+            right: 0rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+               .imgc1{position: absolute;
+            top: 325rem;
+            left: 0%;
+            width: 100%;
+    }
+
+    .c1{position: absolute;
+            top: 339rem;
+            left: 70px;
+            height: 110px;
+            width: 290px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .c2{
+            position: absolute;
+            top:  339rem;
+            left: 25.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .c3{
+            position: absolute;
+            top:  339rem;
+            left: 46rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .c4{
+            position: absolute;
+            top:  339rem;
+            left: 66.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .c5{
+            position: absolute;
+            top:  339rem;
+            right: 20.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .c6{
+            position: absolute;
+            top:  339rem;
+            right: 0rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .imgd1{position: absolute;
+            top: 355rem;
+            left: 0%;
+            width: 100%;
+
+
+        }
+
+        .d1{position: absolute;
+            top: 369rem;
+            left: 70px;
+            height: 110px;
+            width: 290px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .d2{
+            position: absolute;
+            top:  369rem;
+            left: 25.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .d3{
+            position: absolute;
+            top:  369rem;
+            left: 46rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .d4{
+            position: absolute;
+            top:  369rem;
+            left: 66.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .d5{
+            position: absolute;
+            top:  369rem;
+            right: 20.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .d6{
+            position: absolute;
+            top:  369rem;
+            right: 0rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .imge1{position: absolute;
+            top: 385rem;
+            left: 0%;
+            width: 100%;
+
+
+        }
+
+        .e1{position: absolute;
+            top: 400rem;
+            left: 70px;
+            height: 110px;
+            width: 290px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .e2{
+            position: absolute;
+            top:  400rem;
+            left: 25.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .e3{
+            position: absolute;
+            top:  400rem;
+            left: 46rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .e4{
+            position: absolute;
+            top:  400rem;
+            left: 66.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .e5{
+            position: absolute;
+            top:  400rem;
+            right: 20.5rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .e6{
+            position: absolute;
+            top:  400rem;
+            right: 0rem;
+            height: 110px;
+            width: 286px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .imgf{
+            position: absolute;
+            top: 415rem;
+            left: 500px;
+
+        }
+        .f1{
+            position: absolute;
+            top:  428rem;
+            left: 31rem;
+            height: 110px;
+            width: 265px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .f2{
+            position: absolute;
+            top:  428rem;
+            left: 50rem;
+            height: 110px;
+            width: 265px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        .f3{
+            position: absolute;
+            top:  428rem;
+            left:69rem ;
+            height: 110px;
+            width: 265px;
+            background-color: #FF912E;
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <nav> <ul>
+         
+
+        <li><a href="./men.html"> MEN</a></li>
+        <br>
+        <li><a href="./women.html" >WOMEN</a> </li>
+        <br>
+    <li><a href="./kids.html">KIDS</a></li>  
+    <br>
+    <li><a href="./home.html">HOME</a></li> 
+    <br>
+    <li><a href="./beauty.html"> BEAUTY</a></li>
+    <br>
+    <li><a href="./genz.html">GENZ</a></li>
+    <br>
+    <li><a href="./studio.html">STUDIO</a></li>
+
+    <br>
+    <p class="sea"> Search for products,brands and more</p>
+    <img src="./myn.png" alt="mynt" class="myn">
+    <img src="./search.png" alt="sea" class="sear">
+    <img src="./pro.png" alt="prof" class="pro">
+    <p class="p1">Profile</p>
+    <p class="p2">Wishlist</p>
+    <p class="p3">Bag</p>
+    <img src="./img1.png" alt="img" class="img1">
+    <img src="./img2.png" alt="img2" class="img2">
+    <p class="ri">RISING STARS</p>
+    <img src="./img4.png" alt="img4" class="img4">
+    <p class="lux">LUXE GRAND REDUCTION DEALS
+</p>
+<img src="./img5.png" alt="img5" class="img5">
+
+<p class="med">Medal Worthy Brands To Bag
+</p>
+<img src="./img6.png" alt="sssssc" class="img6">
+<p class="gra">Grand Global Brands
+</p>
+<img src="./img7.png" alt="img7" class="img7">
+<p class="sho">Shop By Category
+</p>
+<img src="./img11.png" alt="img11" class="img11">
+<p class="a1"> Ethnic Wear <br>
+ 50-80% OFF <br>
+   Shop Now</p>
+   <p class="a2">WFH Casual wear <br> 40-80% OFF <br> Shop Now</p>
+   <p class="a3">Activewear <br> 30-70% OFF <br> Shop Now</p>
+   <p class="a4">Activewear <br> 30-70% OFF <br> Shop Now</p>
+   <p class="a5">Western Wear <br> 40-80% OFF <br> Shop Now</p>
+   <p class="a6">Sportswear <br> 30-70% OFF <br> Shop Now</p>
+
+   <img src="./imgb1.png" alt="b1" class="imgb1">
+   <p class="b1"> LoungeWear <br>
+ 30-60% OFF <br>
+   Shop Now</p>
+   <p class="b2">Innerwear <br> UP TO 70% OFF <br> Shop Now</p>
+   <p class="b3">Lingerie <br> 30-70% OFF <br> Shop Now</p>
+   <p class="b4">Watches<br> 30-70% OFF <br> Shop Now</p>
+   <p class="b5">Grooming <br> UP TO 80% OFF <br> Shop Now</p>
+   <p class="b6">Beauty& Makeup<br> UP TO 60% OFF <br> Shop Now</p>
+
+
+   <img src="./imgc1.png" alt="imgc1" class="imgc1">
+    <p class="c1">KidsWear <br> UP TO 70% OFF <br> Shop Now</p>
+   <p class="c2">FootWear <br> 60 TO 70% OFF <br> Shop Now</p>
+   <p class="c3">FootWear <br> 40-70% OFF <br> Shop Now</p>
+   <p class="c4">Bags,Belts&Wallets<br> 30-70% OFF <br> Shop Now</p>
+   <p class="c5">Office Wear<br> UP TO 80% OFF <br> Shop Now</p>
+   <p class="c6">Ethnic Wear<br> UP TO 60% OFF <br> Shop Now</p>
+
+   <img src="./imgd1.png" alt="imgd1" class="imgd1">
+
+    <p class="d1">Home Decor<br> 40TO 70% OFF <br> Shop Now</p>
+   <p class="d2">Handbags <br> 60 TO 80% OFF <br> Shop Now</p>
+   <p class="d3">Headphones& Speakers <br> 40-70% OFF <br> Shop Now</p>
+   <p class="d4">Jewellery<br> UPTO 30% OFF <br> Shop Now</p>
+   <p class="d5">Size-Inclusive Styles<br> UP TO 80% OFF <br> Shop Now</p>
+   <p class="d6">Size-Inclusive Styles<br> UP TO 60% OFF <br> Shop Now</p>
+
+   <img src="./imge1.png" alt="imge1" class="imge1">
+   <p class="e1"> Watches&Wearables<br> UP TO 70% OFF <br> Shop Now</p>
+   <p class="e2">Sleepwear <br> 60 TO 70% OFF <br> Shop Now</p>
+   <p class="e3">WorkWear <br> 40-70% OFF <br> Shop Now</p>
+   <p class="e4">EyeWear<br> 30-70% OFF <br> Shop Now</p>
+   <p class="e5">WorkWear <br> UP TO 80% OFF <br> Shop Now</p>
+   <p class="e6">Casual Styles<br> UP TO 60% OFF <br> Shop Now</p>
+
+   <img src="./imgf.png" alt="imgf" class="imgf">
+   <p class="f1"> Bags& Backpacks<br> 30-70% OFF <br> Shop Now</p>
+   <p class="f2">Trolleys& Luggage Bags <br> 30-60% OFF <br> Shop Now</p>
+   <p class="f3">Flip-Flops<br> 30-70% OFF <br> Shop Now</p>
+
+
+
+
+
+
+    
+    </ul>
+ </nav>
+    
+</body>
+</html>
